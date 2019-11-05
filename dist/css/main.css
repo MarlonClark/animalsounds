@@ -71,6 +71,7 @@ main img:active {
   }
   #images {
     width: 900px;
+    padding-top: 70px;
   }
   #banner {
     font-size: 1.4em;
@@ -131,7 +132,7 @@ footer a {
   text-decoration: none;
 }
 
-#gitlab {
+#gitcat {
   vertical-align: middle;
   height: 1.6em;
 }
