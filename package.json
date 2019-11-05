@@ -1,7 +1,7 @@
 {
-  "name": "Animal-Sounds",
+  "name": "animalsounds",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple animal sounds app for kids of all ages.",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "Marlon Clark",
   "license": "MIT",
-  "homepage": "https://MarlonClark.github.io/animalsounds",
+  "homepage": "https://marlonclark.github.io/animalsounds",
   "dependencies": {
     "gh-pages": "^2.1.1"
   }
