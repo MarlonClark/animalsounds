@@ -1,0 +1,20 @@
+{
+  "short_name": "Animal Sounds",
+  "name": "Animal Sounds",
+  "icons": [{
+      "src": "/icons/animalsounds-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/animalsounds-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html?source=pwa",
+  "background_color": "#00c3ff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#00c3ff"
+}

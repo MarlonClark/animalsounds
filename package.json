@@ -1,0 +1,16 @@
+{
+  "name": "Animal-Sounds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Marlon Clark",
+  "license": "MIT",
+  "homepage": "https://MarlonClark.github.io/animalsounds",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

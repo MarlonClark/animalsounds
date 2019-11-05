@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animal Sounds</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="Description"
+      content="A simple animal sounds app for kids of all ages!"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pattern.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00c3ff" />
+    <link rel="shortcut icon" href="/icons/animalsounds-192.png" />
+    <!-- iOS support -->
+    <link rel="apple-touch-icon" href="icons/animalsounds-192.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#00c3ff" />
+  </head>
+
+  <body>
+    <!-- Banner -->
+    <header>
+      <div id="banner">
+        <h1>🐾 Animal Sounds!</h1>
+      </div>
+    </header>
+
+    <!-- Animal images, Loaded from animal.js -->
+    <main id="images">
+      <!-- <img class='animal' id='${animal}' 
+        src='./img/${animal}.jpg'/> -->
+    </main>
+
+    <!-- Audio -->
+    <audio src="sounds/Alligator.mp3" id="sound"></audio>
+
+    <!-- Animal name popup -->
+    <div id="modal">
+      <div id="modal_content">
+        <p id="animal_name">Animal</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <a
+        href="https://github.com/MarlonClark/animalsounds.fun"
+        target="_blank"
+        rel="noopener"
+      >
+        <div>
+          <p>
+            Created by Marlon Clark 😁 -
+            <img id="gitlab" src="/icons/octocat_50px.png" alt="Gitlab.com" />
+            see his Gitlab
+          </p>
+        </div>
+      </a>
+    </footer>
+    <script src="js/animal.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>
