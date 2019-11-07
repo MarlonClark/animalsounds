@@ -5,9 +5,7 @@
 
 "use strict";
 // Main images section
-const main_imgs = document.getElementById("images");
-// Animal images class
-const animal_class = document.images;
+const main_imgs = document.getElementById("container");
 // Pop-up animal name
 const animal_name = document.getElementById("animal_name");
 // Modal for animal name
@@ -36,12 +34,12 @@ const sound = document.getElementById("sound");
 async function showName(e) {
   let name = e.target.id;
   let fun_name = e.target.alt;
-  if (name == "images") {
+  if (name == "container") {
     // if background is clicked do nothing
   } else {
     animal_name.innerHTML = fun_name;
     modal.style.display = "block";
-    sound.setAttribute("src", `/sounds/${name}.mp3`);
+    sound.setAttribute("src", `./sounds/${name}.mp3`);
     sound.play();
   }
 }
